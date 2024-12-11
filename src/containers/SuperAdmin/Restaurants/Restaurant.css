@@ -1,0 +1,73 @@
+.container-restaurant {
+      .title {
+            margin: 50px 0;
+      }
+
+      .bg-restaurant {
+            background-image: url("../../../assets/bg-restaurant.png");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 500px;
+            width: 100%;
+            margin-bottom: 40px;
+
+      }
+}
+
+//TableRestaurants
+#TableRestaurants {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      border-radius: 50px;
+}
+
+#TableRestaurants td,
+#TableRestaurants th {
+      border: 1px solid #ddd;
+      padding: 8px;
+
+}
+
+#TableRestaurants tr:hover {
+      background-color: #ddd;
+}
+
+#TableRestaurants th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04aa6d;
+      color: white;
+
+}
+
+.btn-edit {
+      width: 30px;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: orange;
+      margin-right: 5px;
+
+      &:hover {
+            background-color: transparent !important;
+            color: orange !important;
+
+      }
+}
+
+.btn-delete {
+      width: 30px;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: red;
+
+      &:hover {
+            background-color: transparent !important;
+            color: red !important;
+
+      }
+}

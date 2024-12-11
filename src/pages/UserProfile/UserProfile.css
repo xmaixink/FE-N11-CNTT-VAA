@@ -1,0 +1,59 @@
+.profile-container {
+  max-width: 600px; /* Thu gọn chiều rộng */
+  height: auto;
+  margin: 50px auto; /* Cách đều từ trên xuống dưới */
+  padding: 40px 20px; /* Giảm padding để tránh quá nhiều khoảng trắng */
+  background-color: #ffffff;
+  border-radius: 16px; /* Góc bo mềm mại hơn */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Làm nổi khối mềm mại */
+  font-family: "Arial", sans-serif;
+  color: #444; /* Màu chữ trung tính */
+  display: flex; /* Flexbox để căn chỉnh */
+  flex-direction: column; /* Sắp xếp dọc */
+  align-items: center; /* Căn giữa nội dung */
+}
+
+.profile-container h1 {
+  font-size: 1.8em; /* Kích thước vừa phải */
+  margin-bottom: 20px; /* Tạo khoảng cách dưới tiêu đề */
+  color: #222; /* Làm nổi bật tiêu đề */
+  text-align: center;
+}
+
+.profile-container form {
+  width: 100%; /* Chiếm toàn bộ chiều rộng container */
+  max-width: 500px; /* Giới hạn chiều rộng tối đa */
+  display: flex;
+  flex-direction: column; /* Sắp xếp các phần tử form theo cột */
+  gap: 15px; /* Khoảng cách giữa các thành phần trong form */
+}
+
+.profile-container form input,
+.profile-container form textarea,
+.profile-container form button {
+  width: 100%;
+  padding: 10px 15px; /* Khoảng cách bên trong hợp lý */
+  font-size: 1rem; /* Kích thước chữ dễ đọc */
+  border: 1px solid #ccc; /* Đường viền nhẹ */
+  border-radius: 8px; /* Góc bo mềm mại */
+}
+
+.profile-container form input:focus,
+.profile-container form textarea:focus {
+  border-color: #007bff; /* Đổi màu viền khi focus */
+  outline: none; /* Bỏ đường viền mặc định */
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Hiệu ứng sáng viền */
+}
+
+.profile-container form button {
+  background-color: #007bff; /* Màu xanh nổi bật */
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-container form button:hover {
+  background-color: #0056b3; /* Đổi màu khi hover */
+}

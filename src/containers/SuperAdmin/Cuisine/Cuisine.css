@@ -1,0 +1,125 @@
+body,
+html {
+      height: 100%;
+      margin: 0;
+}
+
+.cuisine-container * {
+      position: relative;
+      z-index: 1;
+}
+
+.cuisine-container {
+      position: relative;
+      padding: 20px;
+      overflow: hidden;
+}
+
+.cuisine-background {
+      background-image: url('../../../assets/bg-restaurant.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      opacity: 0.5;
+}
+
+.cuisine-title {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+}
+
+.cuisine-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+}
+
+.cuisine-form .form-row {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 10px;
+}
+
+.cuisine-form input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: calc(20% - 10px);
+}
+
+.price-save-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+}
+
+.price-input {
+      width: 70%;
+}
+
+
+.save-button,
+.edit-button,
+.delete-button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+}
+
+.save-button {
+      background-color: green;
+      color: white;
+}
+
+.save-button:hover {
+      background-color: darkgreen;
+}
+
+.action-buttons {
+      display: flex;
+      gap: 5px;
+}
+
+.edit-button {
+      background-color: orange;
+      color: white;
+}
+
+.edit-button:hover {
+      background-color: darkorange;
+}
+
+.delete-button {
+      background-color: red;
+      color: white;
+}
+
+.delete-button:hover {
+      background-color: darkred;
+}
+
+.cuisine-table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+
+      .cuisine-table th,
+      .cuisine-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+      }
+
+      .cuisine-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+      }
+}

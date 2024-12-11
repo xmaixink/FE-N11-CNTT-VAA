@@ -1,0 +1,167 @@
+.cart-container{
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+
+.cart {
+  max-width: 900px;
+  margin: 70px auto;
+  padding: 20px;
+  text-align: left;
+  background-color: #f9f9f9; /* Adds subtle background to the cart */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart h1 {
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  color: #000 !important; /* Thay đổi màu chữ thành đen */
+  text-align: center;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cart-item:hover {
+  transform: scale(1.03); /* Slightly bigger hover effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger hover shadow */
+}
+
+.cart-item img {
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.cart-item-info {
+  flex: 1;
+  text-align: left;
+  min-width: 180px; /* Slightly increased minimum width */
+}
+
+.cart-item h2 {
+  font-size: 1.5em;
+  margin: 0;
+  color: #333;
+}
+
+.cart-item p {
+  font-size: 1.1em;
+  margin: 5px 0;
+  color: #666;
+}
+
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-controls button {
+  width: 35px;
+  height: 35px;
+  font-size: 1.2em;
+  color: #333;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quantity-controls button:hover {
+  background-color: #ddd;
+}
+
+.quantity-controls span {
+  font-size: 1.2em;
+  width: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.remove-button {
+  padding: 10px 15px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove-button:hover {
+  background-color: #c0392b;
+}
+
+.cart-total {
+  margin-top: 30px;
+  padding: 25px;
+  text-align: right;
+  border-top: 2px solid #f0f0f0;
+}
+
+.cart-total h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #333;
+}
+
+.cart-total span {
+  color: orange;
+  font-weight: bold;
+}
+
+.checkout-button {
+  background-color: orange;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+  background-color: darkorange;
+}
+
+.select-indicator {
+  font-size: 24px; /* Increase font size */
+  width: 30px; /* Increase width */
+  height: 30px; /* Increase height */
+  border: 2px solid #fff; /* Add border for better visibility */
+  border-radius: 50%; /* Make it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+  transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+.select-indicator.selected {
+  background-color: #4caf50; /* Green color when selected */
+  color: white; /* Change text color to white */
+}
+
+.select-indicator:hover {
+  background-color: #ddd; /* Add hover effect */
+}

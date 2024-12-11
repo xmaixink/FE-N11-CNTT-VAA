@@ -1,0 +1,23 @@
+.header-register {
+      height: 80px;
+      border: 1px solid red;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+}
+
+.center-register {
+      height: 300px;
+      border: 1px solid green;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      padding: 0 10px;
+
+      .col-3-center {
+            border: 1px solid red;
+      }
+}

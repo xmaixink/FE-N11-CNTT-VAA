@@ -1,0 +1,82 @@
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.contact-page h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Form liên hệ */
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-form div {
+  margin-bottom: 20px;
+}
+
+/* Nhãn */
+.contact-form label {
+  font-size: 1.2rem;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Trường nhập liệu */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #f28705;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e67900;
+}
+
+@media (max-width: 768px) {
+  .contact-page h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+}

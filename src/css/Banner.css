@@ -1,0 +1,73 @@
+body {
+    background-image: url("../assets/img/omg.png"); 
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+
+.main-section {
+    width: 100%;
+    padding-top: 20px; 
+  }
+  
+  .product-page {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .banner-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+  }
+  
+  .carousel img {
+    width: 90%; 
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .product-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .product-item img {
+    width: 184px; /* Chiều rộng cố định */
+    height: 248px; /* Chiều cao cố định */
+    object-fit: cover; /* Đảm bảo ảnh không bị kéo dãn và giữ đúng tỷ lệ */
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .price {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  .product-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #f4a261;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

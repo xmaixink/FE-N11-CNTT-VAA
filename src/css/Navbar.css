@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d79875;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+  font-weight: 200;
+}
+
+.logo-image {
+  width: 70px;
+  height: 70px;
+}
+
+.search-bar {
+  margin-top: 20px;
+  width: 470px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  color: #d79875;
+  font-weight: 300;
+  padding-left: 10px;
+  font-size: 25px;
+}
+
+.search-bar::placeholder {
+  color: #d79875;
+  font-size: 25px;
+  text-align: center;
+}
+
+.location_icon {
+  width: 25px;
+  height: 25px;
+}
+
+.location,
+.userInfo-wrapper {
+  font-size: 25px;
+  color: white;
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%; /* Position dropdown below the button */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: max-content;
+  padding: 5px 0;
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu-item {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menu a {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.menu-item span,
+.menu a {
+  color: white;
+}
+
+.menu-item:hover .underline {
+  width: 100%;
+  transition: width 0.3s ease;
+}
+.menu a:hover {
+  color: #f0f0f0;
+}
+
+.underline {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.login-button {
+  background-color: white;
+  color: #d79875;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #c08668;
+  color: white;
+}
+
+.userInfo-wrapper .user-dropdown,
+.location .dropdown {
+  color: #d79875;
+  padding: 10px 0;
+}
+
+.user-dropdown .dropdown-item {
+  padding: 10px 15px;
+}
+
+.dropdown-item .ant-badge .cart-icon {
+  font-size: 35px;
+  background-color: #d79875;
+  color: white;
+}
+
+.flag {
+  width: 50px;
+  padding-right: 10px;
+}

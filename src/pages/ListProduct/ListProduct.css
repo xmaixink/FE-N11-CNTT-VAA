@@ -1,0 +1,173 @@
+.product-page {
+  display: flex;
+  margin-top: 70px;
+}
+
+.product-page h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.product-page .product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card img {
+  width: 186px;
+  height: 248px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-card p {
+  color: #555;
+  font-size: 14px;
+}
+
+.product-card .price {
+  color: #ff4d4f;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.product-card .actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.product-card .view-details-btn {
+  background-color: #d79875;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.product-card .add-to-cart-btn {
+  background-color: #d79875;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Phân trang container */
+.ant-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Đảm bảo căn giữa theo chiều dọc */
+  margin-top: 20px;
+}
+
+/* Nút số trang */
+.ant-pagination-item {
+  background-color: #f5f5f5;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  height: 32px;
+  line-height: 30px; /* Căn giữa văn bản trong nút */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Căn giữa nội dung */
+}
+
+/* Nút số trang khi hover */
+.ant-pagination-item:hover {
+  border-color: #d79875;
+}
+
+/* Nút số trang đang hoạt động */
+.ant-pagination-item-active {
+  background-color: #d79875;
+  border-color: #d79875;
+  color: white;
+}
+
+/* Nút điều hướng (<, >) */
+.ant-pagination-prev,
+.ant-pagination-next {
+  background-color: #f5f5f5;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding-bottom: 30px;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+/* Liên kết trong nút điều hướng */
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link {
+  color: #d79875;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Nút điều hướng khi hover */
+.ant-pagination-prev:hover,
+.ant-pagination-next:hover {
+  border-color: #d79875;
+  background-color: #f0e4d7;
+  color: #b35c3b;
+}
+
+/* Nút bỏ qua (<< hoặc >> với ... biểu thị bỏ qua trang) */
+.ant-pagination-jump-next,
+.ant-pagination-jump-prev {
+  background-color: #f5f5f5;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+/* Hover nút bỏ qua */
+.ant-pagination-jump-next:hover,
+.ant-pagination-jump-prev:hover {
+  color: #d79875;
+}
+
+/* Đảm bảo các nút phân trang đồng đều */
+.ant-pagination-item, .ant-pagination-prev, .ant-pagination-next, .ant-pagination-jump-next, .ant-pagination-jump-prev {
+  margin: 0 5px;
+}
