@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import { useParams, useNavigate } from "react-router-dom";
-import { getAllProductService, updateSideDishProductService } from "../../../services/productService"
-import { getAllSideDishService } from '../../../services/sideDishService'
-import './DetailCuisine.css'
+import React, { useEffect, useState } from 'react';
+import { useNavigate, useParams } from "react-router-dom";
+import { getAllProductService, updateSideDishProductService } from "../../../services/productService";
+import { getAllSideDishService } from '../../../services/sideDishService';
+import './DetailCuisine.css';
+
+
 
 function DetailCuisine() {
       const { id } = useParams();

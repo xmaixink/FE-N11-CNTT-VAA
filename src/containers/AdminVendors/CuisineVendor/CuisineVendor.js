@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import './CuisineVendor.css'
-import { toast } from "react-toastify";
-import { getAllProductService, createNewProductService, deleteProductService, updateProduct } from '../../../services/vendorAdminService'
+import React, { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import { toast } from "react-toastify";
+import { createNewProductService, deleteProductService, getAllProductService, updateProduct } from '../../../services/vendorAdminService';
+import './CuisineVendor.css';
 
 function CuisineVendor() {
 
@@ -235,9 +235,9 @@ function CuisineVendor() {
 					{fetchProducts.map((item, index) => (
 						<tr key={item.id || index}
 							className="table-row"
-							onClick={() => navigate(`/admin-detail-cuisine/${item._id}`)} // Điều hướng tới route mới
+							onClick={() => navigate(`/admin-detail-cuisine/${item._id}`)}
 						>
-							<td>{index + 1}</td> {/* STT bắt đầu từ 1 */}
+							<td>{index + 1}</td> 
 							<td>{item._id}</td>
 							<td>{item.name}</td>
 							<td>
@@ -253,14 +253,14 @@ function CuisineVendor() {
 							<td>{item.category}</td>
 							<td
 								onClick={(e) => {
-									e.stopPropagation(); // Ngăn sự kiện click vào hàng
+									e.stopPropagation();
 								}}
 							>
 								<div className="action-buttons">
 									<button
 										className="edit-button"
 										onClick={(e) => {
-											e.stopPropagation(); // Ngăn sự kiện click vào hàng
+											e.stopPropagation();
 											handleEditProduct(item)
 											setActionEdit(true)
 										}}
@@ -271,7 +271,7 @@ function CuisineVendor() {
 										className="delete-button"
 										onClick={(e) => {
 											handleDeleteProduct(item._id)
-											e.stopPropagation(); // Ngăn sự kiện click vào hàng
+											e.stopPropagation(); 
 										}
 										}
 									>

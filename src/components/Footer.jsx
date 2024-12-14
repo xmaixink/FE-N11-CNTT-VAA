@@ -1,11 +1,10 @@
-// src/Footer.js
 import React from "react";
-import "../css/Footer.css";
 import logo3 from "../assets/img/icn_instargram.jpg";
 import logo2 from "../assets/img/icon_facebook.jpg";
 import img1 from "../assets/img/link_appstore.png";
 import img2 from "../assets/img/link_chplay.png";
 import logo1 from "../assets/img/logo_mealmate.png";
+import "../css/Footer.css";
 
 function Footer() {
   return (

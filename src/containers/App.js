@@ -1,37 +1,37 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import "./App.css";
 //Admin 
+import Cuisine from './SuperAdmin/Cuisine/Cuisine';
 import HeaderAdmin from './SuperAdmin/HeaderAdmin/HeaderAdmin';
-import UserManage from './SuperAdmin/Users/UserManage';
-import Vendor from './SuperAdmin/Vendors/Vendor'
+import HomeAdmin from './SuperAdmin/HomeAdmin/HomeAdmin';
 import Restaurant from './SuperAdmin/Restaurants/Restaurant';
 import Rider from './SuperAdmin/Riders/Rider';
-import Cuisine from './SuperAdmin/Cuisine/Cuisine'
-import HomeAdmin from './SuperAdmin/HomeAdmin/HomeAdmin';
+import UserManage from './SuperAdmin/Users/UserManage';
+import Vendor from './SuperAdmin/Vendors/Vendor';
 
 //Vendor
-import HeaderVendor from './AdminVendors/HeaderVendor/HeaderVendor'
 import LoginVendor from './AdminVendors/Auth/LoginVendor';
 import RegisterVendor from './AdminVendors/Auth/RegisterVendor';
 import VerifyEmail from './AdminVendors/Auth/VerifyEmail';
-import HomeVendor from './AdminVendors/HomeVendor/HomeVendor';
 import CuisineVendor from './AdminVendors/CuisineVendor/CuisineVendor';
+import DetailCuisine from './AdminVendors/DetailCuisine/DetailCuisine';
+import HeaderVendor from './AdminVendors/HeaderVendor/HeaderVendor';
+import HomeVendor from './AdminVendors/HomeVendor/HomeVendor';
 import OrderVendor from './AdminVendors/OrderVendor/OrderVendor';
 import SideDishes from './AdminVendors/SideDishes/SideDishes';
-import DetailCuisine from './AdminVendors/DetailCuisine/DetailCuisine';
 
 // Home
+import SearchResults from "../components/SearchResults";
 import Login from "../pages/auth/Login/Login";
 import Register from "../pages/auth/Register/Register";
+import CartPage from "../pages/Cart/CartPage";
 import ContactPage from "../pages/Contactpage/Contactpage";
+import HistoryOrder from '../pages/HistoryOrder/HistoryOrder';
 import HomePage from "../pages/HomePage/HomePage";
 import ListProduct from "../pages/ListProduct/ListProduct";
-import ProductDetail from "../pages/ProductDetail/ProductDetail";
-import CartPage from "../pages/Cart/CartPage";
-import UserProfile from "../pages/UserProfile/UserProfile";
-import SearchResults from "../components/SearchResults";
 import Payment from '../pages/Payment/Payment';
-import HistoryOrder from '../pages/HistoryOrder/HistoryOrder';
+import ProductDetail from "../pages/ProductDetail/ProductDetail";
+import UserProfile from "../pages/UserProfile/UserProfile";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
